@@ -1,0 +1,20 @@
+27:Android:Pixel 5:com.qa.BaseTest:6fae3f54-02ec-45f2-b803-d885f8da5dd6
+27:Android:Pixel 5:com.qa.BaseTest:Super BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:Child BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:***Strarting test with method -emptyUserName***
+27:Android:Pixel 5:com.qa.tests.LoginTests:Actual error text is -Username is required
+Expected error text is - Username is required
+27:Android:Pixel 5:com.qa.BaseTest:Super BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:Child BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:***Strarting test with method -invalidUserName***
+27:Android:Pixel 5:com.qa.tests.LoginTests:Actual main error text is -Provided credentials do not match any user in this service.
+Expected error text is - Provided credentials do not match any user in this service.
+27:Android:Pixel 5:com.qa.BaseTest:Super BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:Child BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:***Strarting test with method -lockedUserSoftAssert***
+27:Android:Pixel 5:com.qa.tests.LoginTests:Actual main error text is -Sorry, this user has been locked out.
+Expected error text is - Provided credentials do not match any user in this service.
+27:Android:Pixel 5:com.qa.listners.TestListeners:java.io.PrintWriter@21a9df5b
+27:Android:Pixel 5:com.qa.BaseTest:Super BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:Child BeforeMethod called
+27:Android:Pixel 5:com.qa.tests.LoginTests:***Strarting test with method -validUserName***

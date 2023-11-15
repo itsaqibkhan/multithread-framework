@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="tests" name="suit">
+
+  <test name="Pixel">
+      <listeners>
+          <listener class-name="com.qa.listners.TestListeners"/>
+      </listeners>
+	  <parameter name="platformName" value = "Android"/>
+
+      <parameter name="avd" value = "Pixel_5_V12"/>
+      <parameter name="platformVersion" value = "12"/>
+      <parameter name="deviceName" value = "Pixel 5"/>
+      <parameter name="udid" value = "emulator-5554"/>
+      <parameter name="systemPort" value = "10000"/>
+      <classes>
+       <class name="com.qa.tests.LoginTests">
+          <!-- <methods>
+               <include name = "invalidUserName"/>
+           </methods>-->
+          </class>
+<!--
+       &lt;!&ndash;<class name="com.qa.tests.ProductTests">
+             &lt;!&ndash; <methods>
+                  <include name ="addProductsToCart"/>
+              </methods>&ndash;&gt;
+          </class>&ndash;&gt;-->
+      </classes>
+  </test>
+
+    <test name="Realme">
+        <listeners>
+            <listener class-name="com.qa.listners.TestListeners"/>
+        </listeners>
+        <parameter name="platformName" value = "Android"/>
+
+        <parameter name="platformVersion" value = "11"/>
+        <parameter name="deviceName" value = "Realme 7"/>
+        <parameter name="udid" value = "L7854L45IJ8X5L5X"/>
+        <parameter name="systemPort" value = "10001"/>
+        <classes>
+            <class name="com.qa.tests.LoginTests">
+              <!--   <methods>
+                     <include name = "invalidUserName"/>
+                 </methods>-->
+            </class>
+
+            <!--<class name="com.qa.tests.ProductTests">
+                  &lt;!&ndash; <methods>
+                       <include name ="addProductsToCart"/>
+                   </methods>&ndash;&gt;
+               </class>-->
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

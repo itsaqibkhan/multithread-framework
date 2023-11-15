@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resouces>
+    <!-- Login err-->
+    <string name="err_empty_username">Username is required</string>
+    <string name="err_invalid_credentials">Provided credentials do not match any user in this service.</string>
+
+    <!--Product page title -->
+    <string name="title_slb">Sauce Labs Backpack</string>
+    <string name="title_torch">Sauce Labs Bike Light</string>
+</resouces>
