@@ -9,6 +9,8 @@ import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.commons.codec.binary.Base64;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,6 +24,8 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+
+
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 
@@ -35,6 +39,9 @@ public class BaseTest {
     protected static ThreadLocal <String> deviceName = new ThreadLocal<String>();
     protected static ThreadLocal <String> platformName = new ThreadLocal<String>();
     TestUtils utils = new TestUtils();
+    static Logger log = LogManager.getLogger(BaseTest.class.getName());
+
+
     public AppiumDriver getDriver(){
         return driver.get();
     }
@@ -159,10 +166,18 @@ public class BaseTest {
         InputStream stringIs  = null;
         AppiumDriver driver;
 
+
+        log.trace("This is a trace");
+        log.debug("This is a debug");
+        log.info("This is a info");
+        log.warn("This is a warn");
+        log.error("This is a error");
+        log.fatal("This is a fatal");
+
         try {
     //   String appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "app" + File.separator +  "Android-MyDemoAppRN.1.3.0.build-244(1).apk";
 
-      Properties props = new Properties();l987
+      Properties props = new Properties();
 //   utils = new TestUtils();
 
 
