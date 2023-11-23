@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-22T13:42:55 IST" name="suit" finished-at="2023-11-22T13:43:12 IST" duration-ms="16334">
+  <suite started-at="2023-11-23T12:34:48 IST" name="suit" finished-at="2023-11-23T12:35:03 IST" duration-ms="15483">
     <groups>
     </groups>
-    <test started-at="2023-11-22T13:42:55 IST" name="Realme" finished-at="2023-11-22T13:43:12 IST" duration-ms="16334">
+    <test started-at="2023-11-23T12:34:48 IST" name="Realme" finished-at="2023-11-23T12:35:03 IST" duration-ms="15483">
       <class name="com.qa.tests.LoginTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:42:53 IST" name="beforeSuite" finished-at="2023-11-22T13:42:55 IST" duration-ms="2623" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:34:45 IST" name="beforeSuite" finished-at="2023-11-23T12:34:48 IST" duration-ms="2631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:42:55 IST" name="beforeTest" finished-at="2023-11-22T13:43:06 IST" duration-ms="11043" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:34:48 IST" name="beforeTest" finished-at="2023-11-23T12:34:58 IST" duration-ms="10236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,29 +40,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:06 IST" name="beforeClass" finished-at="2023-11-22T13:43:06 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:34:58 IST" name="beforeClass" finished-at="2023-11-23T12:34:58 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:06 IST" name="beforeMethod" finished-at="2023-11-22T13:43:12 IST" duration-ms="5248" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:34:58 IST" name="beforeMethod" finished-at="2023-11-23T12:35:03 IST" duration-ms="5218" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/df23c88a.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/9a075805.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [69705b7e-86ab-4b78-a9be-035d6d2f7f41, startRecordingScreen {}]
+Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
 Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 69705b7e-86ab-4b78-a9be-035d6d2f7f41]]>
+Session ID: 252da343-693d-4358-8f88-ca2acb1e1872]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/df23c88a.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/9a075805.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [69705b7e-86ab-4b78-a9be-035d6d2f7f41, startRecordingScreen {}]
+Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
 Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 69705b7e-86ab-4b78-a9be-035d6d2f7f41
+Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,29 +115,29 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:12 IST" name="beforeMethod" finished-at="2023-11-22T13:43:12 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:35:03 IST" name="beforeMethod" finished-at="2023-11-23T12:35:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="invalidUserName()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:12 IST" name="invalidUserName" finished-at="2023-11-22T13:43:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="invalidUserName()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:35:03 IST" name="invalidUserName" finished-at="2023-11-23T12:35:03 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/df23c88a.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/9a075805.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [69705b7e-86ab-4b78-a9be-035d6d2f7f41, startRecordingScreen {}]
+Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
 Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 69705b7e-86ab-4b78-a9be-035d6d2f7f41]]>
+Session ID: 252da343-693d-4358-8f88-ca2acb1e1872]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/df23c88a.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file '/sdcard/9a075805.mp4' does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-88-generic', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [69705b7e-86ab-4b78-a9be-035d6d2f7f41, startRecordingScreen {}]
+Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
 Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 69705b7e-86ab-4b78-a9be-035d6d2f7f41
+Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -190,15 +190,15 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserName -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:12 IST" name="afterMethod" finished-at="2023-11-22T13:43:12 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:35:03 IST" name="afterMethod" finished-at="2023-11-23T12:35:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:12 IST" name="afterTest" finished-at="2023-11-22T13:43:12 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:35:03 IST" name="afterTest" finished-at="2023-11-23T12:35:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.LoginTests@3f91b517]" started-at="2023-11-22T13:43:12 IST" name="afterSuite" finished-at="2023-11-22T13:43:12 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.LoginTests@18a136ac]" started-at="2023-11-23T12:35:03 IST" name="afterSuite" finished-at="2023-11-23T12:35:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

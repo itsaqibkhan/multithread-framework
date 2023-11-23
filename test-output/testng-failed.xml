@@ -18,8 +18,8 @@
           <include name="beforeSuite"/>
           <include name="invalidUserName"/>
           <include name="beforeClass"/>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
         </methods>
