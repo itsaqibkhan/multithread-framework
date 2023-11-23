@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-suit" class="navigator-link">
-              <span class="suite-name border-skipped">suit</span>
+              <span class="suite-name border-failed">suit</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-suit" class="hide-methods skipped suite-suit"> (hide)</a> <!-- hide-methods skipped suite-suit -->
-                      <a href="#" panel-name="suite-suit" class="show-methods skipped suite-suit"> (show)</a> <!-- show-methods skipped suite-suit -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suit" class="hide-methods failed suite-suit"> (hide)</a> <!-- hide-methods failed suite-suit -->
+                      <a href="#" panel-name="suite-suit" class="show-methods failed suite-suit"> (show)</a> <!-- show-methods failed suite-suit -->
                     </span>
-                    <div class="method-list-content skipped suite-suit">
+                    <div class="method-list-content failed suite-suit">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suit" title="com.qa.tests.ProductTests" class="method navigator-link" hash-for-method="addProductsToCart">addProductsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suit -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suit" class="hide-methods passed suite-suit"> (hide)</a> <!-- hide-methods passed suite-suit -->
+                      <a href="#" panel-name="suite-suit" class="show-methods passed suite-suit"> (show)</a> <!-- show-methods passed suite-suit -->
+                    </span>
+                    <div class="method-list-content passed suite-suit">
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-suit" title="com.qa.tests.LoginTests" class="method navigator-link" hash-for-method="invalidUserName">invalidUserName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-suit -->
+                    </div> <!-- method-list-content passed suite-suit -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +132,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-suit" class="panel suit">
-          <div class="suite-suit-class-skipped">
+          <div class="suite-suit-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.ProductTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductsToCart">
+                  </a> <!-- addProductsToCart -->
+                  <span class="method-name">addProductsToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c2b3e204-7aea-47c1-a0df-7fec2254414f, findElement {using=xpath, value=(//android.widget.TextView[@content-desc=&apos;store item text&apos;])[1]}]
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c2b3e204-7aea-47c1-a0df-7fec2254414f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.qa.pages.HomeScreen.pressProductTitle(HomeScreen.java:31)
+	at com.qa.tests.ProductTests.addProductsToCart(ProductTests.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suit-class-failed -->
+          <div class="suite-suit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.qa.tests.LoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,33 +183,10 @@
                   <a name="invalidUserName">
                   </a> <!-- invalidUserName -->
                   <span class="method-name">invalidUserName</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20044ms. 
-Host info: host: &apos;user-Latitude-3420&apos;, ip: &apos;127.0.1.1&apos;
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:systemPort=10001, appium:udid=L7854L45IJ8X5L5X, appium:appActivity=com.saucelabs.mydemoapp.rn.MainActivity, platformName=ANDROID, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.rn}], desiredCapabilities=Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}}]
-Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
-	at com.qa.BaseTest.beforeTest(BaseTest.java:205)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-suit-class-skipped -->
+          </div> <!-- suite-suit-class-passed -->
         </div> <!-- panel suit -->
         <div panel-name="test-xml-suit" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -181,6 +212,11 @@ Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPack
           &lt;include name=&quot;invalidUserName&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.qa.tests.LoginTests --&gt;
+      &lt;class name=&quot;com.qa.tests.ProductTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addProductsToCart&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.ProductTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Realme --&gt;
 &lt;/suite&gt; &lt;!-- suit --&gt;
@@ -194,7 +230,7 @@ Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPack
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Realme (1 class)</span>
+                <span class="test-name">Realme (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,16 +256,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalidUserName')
 data.setCell(0, 2, 'com.qa.tests.LoginTests')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 9085);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addProductsToCart')
+data.setCell(1, 2, 'com.qa.tests.ProductTests')
+data.setCell(1, 3, 768);
 window.suiteTableData['suit']= { tableData: data, tableDiv: 'times-div-suit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-suit">
               </div> <!-- times-div-suit -->
             </div> <!-- times-div -->
@@ -240,11 +280,18 @@ return data;
             <span class="header-content">Reporter output for suit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProductsToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">This is a test reporter</span>
+                <span class="reporter-method-output"><a href='/home/user/IdeaProjects/practiceFrameworkMultiThreadCheap/Screenshots/Android_11_Realme 7/2023-11-23-22-58-21/ProductTests/addProductsToCart.png'> <img src='/home/user/IdeaProjects/practiceFrameworkMultiThreadCheap/Screenshots/Android_11_Realme 7/2023-11-23-22-58-21/ProductTests/addProductsToCart.png' height='400' width='400'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -255,6 +302,21 @@ return data;
                 <span class="ignored-method-name">emptyUserName</span>
                 <br/>
                 <span class="ignored-method-name">validUserName</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.tests.ProductTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">validateProductAtProductDetail</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -272,38 +334,60 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeTest(Android, Realme 7, L7854L45IJ8X5L5X, null, 10001)</span>
-                <span class="method-start">2945 ms</span>
+                <span class="method-start">3938 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">23621 ms</span>
+                <span class="method-start">15101 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">23626 ms</span>
+                <span class="method-start">15109 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">23626 ms</span>
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTests.invalidUserName() throws java.lang.InterruptedException)</span>
+                <span class="method-start">15112 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidUserName</span>
-                <span class="method-start">23627 ms</span>
+                <span class="method-start">16131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">23628 ms</span>
+                <span class="method-name">afterMethod([TestResult name=invalidUserName status=SUCCESS method=LoginTests.invalidUserName()[pri:0, instance:...)</span>
+                <span class="method-start">25218 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.ProductTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.ProductTests.addProductsToCart() throws java.lang.InterruptedException)</span>
+                <span class="method-start">25356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductsToCart</span>
+                <span class="method-start">25782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addProductsToCart status=FAILURE method=ProductTests.addProductsToCart()[pri:0, ins...)</span>
+                <span class="method-start">27322 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">23629 ms</span>
+                <span class="method-start">27473 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">23651 ms</span>
+                <span class="method-start">27708 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

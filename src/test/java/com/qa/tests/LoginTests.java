@@ -51,12 +51,12 @@ public class LoginTests extends BaseTest {
 
     @BeforeMethod
     public void beforeMethod(Method m){
-    utils.log("Child BeforeMethod called");
+     utils.log().info("Child BeforeMethod called");
 
         loginPage = new LoginPage();
         homeScreen = new HomeScreen();
         menuBar = new MenuBar();
-    utils.log("***Strarting test with method -" + m.getName()+ "***");
+     utils.log().info("***Strarting test with method -" + m.getName()+ "***");
         terminateApp();                                     //Make all the test case independent and then terminate and activate app in beforemethod
         activateApp();
     }
@@ -68,7 +68,7 @@ public class LoginTests extends BaseTest {
         loginPage.pressLoginBtn();
         String actualErrText = loginPage.getErrTxt();
         String expectedErrText = getStrings().get("err_empty_username");
-    utils.log("Actual error text is -" + actualErrText + "\n" + "Expected error text is - " + expectedErrText);
+     utils.log().info("Actual error text is -" + actualErrText + "\n" + "Expected error text is - " + expectedErrText);
         Assert.assertEquals(actualErrText, expectedErrText);
     }
 
@@ -80,7 +80,7 @@ public class LoginTests extends BaseTest {
             loginPage.enterUserName(loginusers.getJSONObject("invalidUserName").getString("username")).enterPassword(loginusers.getJSONObject("invalidUserName").getString("password")).pressLoginBtn();  // We can do this chaining only because first to method return login page also a goof practice for page object model
             String actualMainErrTxt = loginPage.getMainErrTxt();
             String expectedMainErrTxt = getStrings().get("err_invalid_credentials");
-        utils.log("Actual main error text is -" + actualMainErrTxt + "\n" + "Expected error text is - " + expectedMainErrTxt);
+         utils.log().info("Actual main error text is -" + actualMainErrTxt + "\n" + "Expected error text is - " + expectedMainErrTxt);
             Assert.assertEquals(actualMainErrTxt, expectedMainErrTxt);
 
        /*
@@ -92,7 +92,7 @@ public class LoginTests extends BaseTest {
           StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
             e.printStackTrace(pw);
-        utils.log(sw.toString());
+         utils.log().info(sw.toString());
             Assert.fail(sw.toString());
         */
     }
@@ -110,7 +110,7 @@ public class LoginTests extends BaseTest {
         SoftAssert sa =new SoftAssert();
         String actualMainErrTxt = loginPage.getMainErrTxt();
         String expectedMainErrTxt = getStrings().get("err_invalid_credentials");
-    utils.log("Actual main error text is -" + actualMainErrTxt + "\n" + "Expected error text is - " + expectedMainErrTxt);
+     utils.log().info("Actual main error text is -" + actualMainErrTxt + "\n" + "Expected error text is - " + expectedMainErrTxt);
         sa.assertEquals(actualMainErrTxt, expectedMainErrTxt);
         sa.assertAll();
     }

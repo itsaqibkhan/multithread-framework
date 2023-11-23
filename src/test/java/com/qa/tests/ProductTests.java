@@ -27,7 +27,7 @@ public class ProductTests extends MenuBar {
         headerBar = new HeaderBar();
         cartScreen = new CartScreen();
 
-    utils.log("***Starting method- "+ m.getName());
+     utils.log().info("***Starting method- "+ m.getName());
    //     terminateApp();
    //     activateApp();
 
@@ -42,12 +42,12 @@ public class ProductTests extends MenuBar {
          SoftAssert sa = new SoftAssert();
          String expectedString = getStrings().get("title_slb");
          String actualString = homeScreen.getSLBName();
-     utils.log("Expected error text is -" + expectedString + "\n" + "Actual text is - " + actualString);
+      utils.log().info("Expected error text is -" + expectedString + "\n" + "Actual text is - " + actualString);
          sa.assertEquals(actualString, expectedString);
 
          expectedString = getStrings().get("title_torch");
          actualString = homeScreen.getSauceLightName();
-     utils.log("Expected error text is -" + expectedString + "\n" + "Actual text is - " + actualString);
+      utils.log().info("Expected error text is -" + expectedString + "\n" + "Actual text is - " + actualString);
          sa.assertEquals(actualString, expectedString);
          sa.assertAll();
     }
@@ -58,7 +58,7 @@ public class ProductTests extends MenuBar {
         String expectedString = getStrings().get("title_slb");
         Thread.sleep(2000);
         String actualString = productDetail.productTitleDetailPage();
-    utils.log("Expected text is -" + expectedString + "\n" + "Actual text is - " + actualString);
+     utils.log().info("Expected text is -" + expectedString + "\n" + "Actual text is - " + actualString);
         Assert.assertEquals(actualString, expectedString);
         productDetail.pressAddToCartBnt();
         pressBackButton();
@@ -67,22 +67,22 @@ public class ProductTests extends MenuBar {
         String expectedTorchString = getStrings().get("title_torch");
         Thread.sleep(2000);         //To prevent stale element exception
         String actualTorchString = productDetail.productTitleDetailPage();
-    utils.log("Expected text is -" + expectedTorchString + "\n" + "Actual text is - " + actualTorchString);
+     utils.log().info("Expected text is -" + expectedTorchString + "\n" + "Actual text is - " + actualTorchString);
         Assert.assertEquals(actualString, expectedString);
         productDetail.pressAddToCartBnt();
         pressBackButton();
         headerBar.pressCartBtn();
 
         Thread.sleep(2000);
-    utils.log(cartScreen.getProductPriceCart(1));
-    utils.log(cartScreen.getProductPriceCart(2));
-    utils.log(cartScreen.getTotalPrice());
+     utils.log().info(cartScreen.getProductPriceCart(1));
+     utils.log().info(cartScreen.getProductPriceCart(2));
+     utils.log().info(cartScreen.getTotalPrice());
 
 
         float calculatedSum = Float.parseFloat(cartScreen.getProductPriceCart(1).substring(1))
                 + Float.parseFloat(cartScreen.getProductPriceCart(2).substring(1)); //Get a substring and convert it into integer
         float shownSum = Float.parseFloat(cartScreen.getTotalPrice().substring(1));
-    utils.log("The calculated sum is $" + calculatedSum + "\n" + "The shown sum is $" + shownSum);
+     utils.log().info("The calculated sum is $" + calculatedSum + "\n" + "The shown sum is $" + shownSum);
         Assert.assertEquals(calculatedSum, shownSum);
 
     }

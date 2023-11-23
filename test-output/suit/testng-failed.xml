@@ -11,19 +11,18 @@
     <parameter name="deviceName" value="Realme 7"/>
     <parameter name="systemPort" value="10001"/>
     <classes>
-      <class name="com.qa.tests.LoginTests">
+      <class name="com.qa.tests.ProductTests">
         <methods>
-          <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="beforeClass"/>
-          <include name="invalidUserName"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="addProductsToCart"/>
         </methods>
-      </class> <!-- com.qa.tests.LoginTests -->
+      </class> <!-- com.qa.tests.ProductTests -->
     </classes>
   </test> <!-- Realme(failed) -->
 </suite> <!-- Failed suite [suit] -->
