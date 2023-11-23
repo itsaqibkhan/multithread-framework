@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 23 12:34:48 IST 2023</td>
+<td>Started on:</td><td>Thu Nov 23 19:24:46 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15483 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20689 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,50 +76,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file &apos;/sdcard/9a075805.mp4&apos; does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+<td title='com.qa.tests.LoginTests.beforeTest()'><b>beforeTest</b><br>Test class: com.qa.tests.LoginTests<br>Parameters: Android, Realme 7, L7854L45IJ8X5L5X, null, 10001</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20044ms. 
+Host info: host: &apos;user-Latitude-3420&apos;, ip: &apos;127.0.1.1&apos;
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
-Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:systemPort=10001, appium:udid=L7854L45IJ8X5L5X, appium:appActivity=com.saucelabs.mydemoapp.rn.MainActivity, platformName=ANDROID, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.rn}], desiredCapabilities=Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:313)
-	at io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen(CanRecordScreen.java:48)
-	at com.qa.BaseTest.beforeMethod(BaseTest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:205)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace475816303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace475816303'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file &apos;/sdcard/9a075805.mp4&apos; does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace191568263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace191568263'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20044ms. 
+Host info: host: &apos;user-Latitude-3420&apos;, ip: &apos;127.0.1.1&apos;
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
-Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:systemPort=10001, appium:udid=L7854L45IJ8X5L5X, appium:appActivity=com.saucelabs.mydemoapp.rn.MainActivity, platformName=ANDROID, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.rn}], desiredCapabilities=Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:313)
-	at io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen(CanRecordScreen.java:48)
-	at com.qa.BaseTest.beforeMethod(BaseTest.java:92)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:205)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,17 +130,9 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -152,8 +146,8 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
-<td>5</td>
-<td>com.qa.tests.LoginTests@18a136ac</td></tr>
+<td>20</td>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -167,17 +161,27 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 <td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tests.LoginTests@18a136ac</td></tr>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
 <tr>
 <td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tests.LoginTests@18a136ac</td></tr>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
 <tr>
 <td title='com.qa.tests.LoginTests.afterTest()'><b>afterTest</b><br>Test class: com.qa.tests.LoginTests</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tests.LoginTests@18a136ac</td></tr>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeClass()'><b>beforeClass</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -189,49 +193,51 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 </tr>
 <tr>
 <td title='com.qa.tests.LoginTests.invalidUserName()'><b>invalidUserName</b><br>Test class: com.qa.tests.LoginTests</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file &apos;/sdcard/9a075805.mp4&apos; does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20044ms. 
+Host info: host: &apos;user-Latitude-3420&apos;, ip: &apos;127.0.1.1&apos;
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
-Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:systemPort=10001, appium:udid=L7854L45IJ8X5L5X, appium:appActivity=com.saucelabs.mydemoapp.rn.MainActivity, platformName=ANDROID, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.rn}], desiredCapabilities=Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:313)
-	at io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen(CanRecordScreen.java:48)
-	at com.qa.BaseTest.beforeMethod(BaseTest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:205)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522975986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1522975986'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The expected screen record file &apos;/sdcard/9a075805.mp4&apos; does not exist after 5000ms. Is screenrecord utility available and operational on the device under test?
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1868964323", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1868964323'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20044ms. 
+Host info: host: &apos;user-Latitude-3420&apos;, ip: &apos;127.0.1.1&apos;
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-88-generic&apos;, java.version: &apos;15.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [252da343-693d-4358-8f88-ca2acb1e1872, startRecordingScreen {}]
-Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, platformName: ANDROID, systemPort: 10001, udid: L7854L45IJ8X5L5X}, appium:deviceApiLevel: 30, appium:deviceManufacturer: realme, appium:deviceModel: RMX2151, appium:deviceName: L7854L45IJ8X5L5X, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: L7854L45IJ8X5L5X, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 115, appium:systemPort: 10001, appium:takesScreenshot: true, appium:udid: L7854L45IJ8X5L5X, appium:viewportRect: {height: 2170, left: 0, top: 115, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:systemPort=10001, appium:udid=L7854L45IJ8X5L5X, appium:appActivity=com.saucelabs.mydemoapp.rn.MainActivity, platformName=ANDROID, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.rn}], desiredCapabilities=Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}}]
+Capabilities {appium:appActivity: com.saucelabs.mydemoapp.rn...., appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:systemPort: 10001, appium:udid: L7854L45IJ8X5L5X, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:313)
-	at io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen(CanRecordScreen.java:48)
-	at com.qa.BaseTest.beforeMethod(BaseTest.java:92)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:205)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,17 +246,9 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -265,7 +263,7 @@ Session ID: 252da343-693d-4358-8f88-ca2acb1e1872
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.tests.LoginTests@18a136ac</td></tr>
+<td>com.qa.tests.LoginTests@4879dfad</td></tr>
 </table><p>
 </body>
 </html>

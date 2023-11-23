@@ -16,10 +16,10 @@
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="invalidUserName"/>
           <include name="beforeClass"/>
-          <include name="beforeTest"/>
+          <include name="invalidUserName"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
         </methods>
