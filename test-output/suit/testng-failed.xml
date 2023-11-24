@@ -4,25 +4,27 @@
   <listeners>
     <listener class-name="com.qa.listners.TestListeners"/>
   </listeners>
-  <test thread-count="5" name="Realme(failed)">
-    <parameter name="platformVersion" value="11"/>
+  <test thread-count="5" name="Pixel(failed)">
+    <parameter name="platformVersion" value="12"/>
     <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="L7854L45IJ8X5L5X"/>
-    <parameter name="deviceName" value="Realme 7"/>
-    <parameter name="systemPort" value="10001"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Pixel 5"/>
+    <parameter name="avd" value="Pixel_5_V12"/>
+    <parameter name="systemPort" value="10000"/>
     <classes>
-      <class name="com.qa.tests.ProductTests">
+      <class name="com.qa.tests.LoginTests">
         <methods>
+          <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="afterMethod"/>
+          <include name="beforeClass"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="addProductsToCart"/>
+          <include name="lockedUserSoftAssert"/>
         </methods>
-      </class> <!-- com.qa.tests.ProductTests -->
+      </class> <!-- com.qa.tests.LoginTests -->
     </classes>
-  </test> <!-- Realme(failed) -->
+  </test> <!-- Pixel(failed) -->
 </suite> <!-- Failed suite [suit] -->

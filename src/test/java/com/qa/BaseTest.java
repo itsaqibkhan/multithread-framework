@@ -11,6 +11,7 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -163,6 +164,15 @@ public class BaseTest {
         InputStream inputStream = null;
         InputStream stringIs  = null;
         AppiumDriver driver;
+
+        String strFile = "logs" + File.separator + platformName + "_" +deviceName;
+        File logFile = new File(strFile);
+        if (!logFile.exists())
+        {
+            logFile.mkdirs();
+        }
+        ThreadContext.put("ROUTINGKEY", strFile);
+
 
 /*
         log.trace("This is a trace");
